@@ -71,7 +71,7 @@ section{
   justify-content: center;
 }
 section div{
-  width: 33px;
+  width: 300px;
   height: 170px;
   background-color: yellow;
   margin-left: 2px;
@@ -161,3 +161,25 @@ h1 {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+.multimedia{
+  width: 800px;
+  background-color: aquamarine;
+}
+
+.multimedia video{
+  width: 500px;
+}
+
+/*estadios*/
+
+#eeuu, #eeuu tr, #eeuu th{
+  border: solid cadetblue 3px;
+  border-collapse: collapse;
+}
+
+#eeuuimg{
+  width: 200px;
+}
+
+
