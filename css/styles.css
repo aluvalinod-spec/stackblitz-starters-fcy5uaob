@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box; /*se ajusta al tamaño del contenido*/
+  box-sizing: border-box; /*se ajusta al tamaño del contenedor*/
 }
 
 body {
@@ -8,9 +8,9 @@ body {
   color: black;
   background-color: white;
 }
-/*inicio del header*/
+/*inicio header*/
 header {
-  background-color: black;
+  background-color: #000;
 }
 #logos {
   display: flex;
@@ -24,9 +24,8 @@ header {
 #fifa img {
   width: 191px;
 }
-/*fin del header*/
+/*fin header*/
 /*inicio nav*/
-
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -50,19 +49,19 @@ nav a {
   color: #555;
 }
 
-nav a [aria-current='page'] {
+nav a[aria-current='page'] {
   color: #000;
   background-color: #d4d4d4;
 }
-.activo{
+.activo {
   box-shadow: 5px 5px lightgray;
+  /*border-bottom: 5px solid lightgray; otra opción*/
 }
 /*fin nav*/
 /*inicio main*/
 section{
   width: 1000px;
-
-  background-color:  powderblue;
+  background-color: rgb(130, 210, 210);
   margin: 0 auto;
   margin-bottom: 5px;
   display: flex;
@@ -71,51 +70,33 @@ section{
   justify-content: center;
 }
 section div{
-  width: 300px;
-  height: 170px;
-  background-color: yellow;
-  margin-left: 2px;
+width: 300px;
+height: 170px;
+background-color: yellow;
+margin: 5px;
 }
-
 #intro{
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3lrvhCgGrdvgd11sF66cJed1B3A7VoktK_Q&s);
-
- 
-/*background-repeat: no-repeat;
- tamaño de fondo: cubrir;
- posición de fondo: centro;
- */
-
-  box-shadow:5px 3px palevioletred;
+  background-image: url(https://static8.depositphotos.com/1000401/917/i/450/depositphotos_9170486-stock-photo-stars-in-outer-space.jpg);
+  box-shadow: 5px 3px lightgrey;
   border-radius: 15px;
-}  
-
-#eeuu{
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_the_United_States_%281912-1959%29.svg/3840px-Flag_of_the_United_States_%281912-1959%29.svg.png);
-  background-size: cover ;
 }
-
+#eeuu{
+  background-image: url(../img/banderaeeuu.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 #mx{
-  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/006/601/767/small/mexico-flag-with-waving-effect-official-proportion-vector.jpg);
+  background-image: url(../img/banderamx.png);
+  background-size: cover;
+  background-position:center ;
+}
+#can{
+  background-image: url(../img/banderacan.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
-#can{background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg);
-  background-size: cover ;
-  background-position: center;
-}
-
-
-
 /*fin main*/
-/*comienzo de estadios*/
-
-table, td, th{
- background-color: darkcyan 3px solid ;
-}
-
 /*inicio del footer*/
 footer {
   background-color: #000;
@@ -130,7 +111,7 @@ footer {
   padding: 5px;
 }
 #colegio a {
-  color: #d4d4d4;
+  color: #aaa;
 }
 #alumno {
   width: 33%;
@@ -147,11 +128,9 @@ footer {
   padding: 5px;
 }
 #sociales img {
-  width: 45px;
+  width: 50px;
 }
-/* fin del footer*/
-
-
+/*fin del footer*/
 
 main {
   padding: 1rem;
@@ -161,25 +140,32 @@ h1 {
   font-weight: bold;
   font-size: 1.5rem;
 }
-
 .multimedia{
   width: 800px;
-  background-color: aquamarine;
+  background-color: blanchedalmond;
 }
-
 .multimedia video{
-  width: 500px;
+  width: 600px;
 }
-
 /*estadios*/
-
-#eeuu, #eeuu tr, #eeuu th{
-  border: solid cadetblue 3px;
+#estadosunidos,#estadosunidos tr, #estadosunidos td, #estadosunidos th{
+  border: solid cornflowerblue 3px;
   border-collapse: collapse;
 }
-
-#eeuuimg{
+#estadosunidos img{
   width: 200px;
 }
-
-
+#canada, #canada tr, #canada td, #canada th{
+  border: solid cornflowerblue 3px;
+  border-collapse: collapse;
+}
+#canada img{
+  width: 200px;
+}
+#mexico, #mexico tr, #mexico td, #mexico th{
+  border: solid cornflowerblue 3px;
+  border-collapse: collapse;
+}
+#mexico img{
+  width: 200px;
+}
