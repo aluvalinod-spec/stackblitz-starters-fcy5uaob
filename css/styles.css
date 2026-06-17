@@ -170,18 +170,41 @@ h1 {
   width: 200px;
 }
 
-
-#campeones, #campeones tr, #campeones td {
-
-  border: 3px solid #df35a1;
-  border-collapse: collapse;
+/*campeones******/
+/****** /*Contenedor principal:Diveide el diseño en dos columnas(Continente y Paises)*/
+.campeones {
+  display: grid;
+  grid-template-columns:lfr; /*25% para continete, 75% para paises */
+  border: 2px solid #000;
+  width: 100%;
 }
 
-#campeones img{
-  width:200px;
+/* Columna izquierda: Continente ocupara todo el alto disponible automaticamente*/
+.continente{
+border-right: 2px solid #000;
+padding: 15px 10px;
+font-weight: bold;
+font-size: 14px;
 }
 
+/*Columna Derecha: se convierte en otro Grid para organizar el contenido interno */
+.paises{
+  display: grid;
+  grid-template-columns: lfr lfr;/* Divido en 2 columnas para las fotos*/
+}
 
+.pais {
+  grid-column: span 2;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 13px;
+  border-bottom: 2px solid #000;
+}
 
-
-  
+/* Las fotos se acomodan una al lado de la otra automaticamente (50% cada una)*/
+.foto{
+min-height: 120px; /* Espacio para la imagen*/
+padding: 35px 10px 10px 10px;
+font-size: 11px;
+border-bottom: 2px solid #000;
+}  
