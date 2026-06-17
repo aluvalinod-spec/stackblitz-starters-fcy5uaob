@@ -208,3 +208,16 @@ padding: 35px 10px 10px 10px;
 font-size: 11px;
 border-bottom: 2px solid #000;
 }  
+
+/*Borde verticar divisor solo en la primera foto*/
+.foto:nth-of-type(odd) {
+  border-right: 2px solid #000;
+}
+
+/* La reseña se salta al fondo ocupando las dos columnas*/
+.resenia{
+  grid-column: span 2;
+  padding: 10px;
+  min-height: 80px;
+  font-size: 11px;
+}
