@@ -174,7 +174,7 @@ h1 {
 /****** /*Contenedor principal:Diveide el diseño en dos columnas(Continente y Paises)*/
 .campeones {
   display: grid;
-  grid-template-columns:lfr; /*25% para continete, 75% para paises */
+  grid-template-columns: 1fr 3fr; /*25% para continete, 75% para paises */
   border: 2px solid #000;
   width: 100%;
 }
