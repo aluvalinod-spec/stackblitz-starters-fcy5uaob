@@ -190,7 +190,7 @@ font-size: 14px;
 /*Columna Derecha: se convierte en otro Grid para organizar el contenido interno */
 .paises{
   display: grid;
-  grid-template-columns: lfr lfr;/* Divido en 2 columnas para las fotos*/
+  grid-template-columns: 1fr 3fr;/* Divido en 2 columnas para las fotos*/
 }
 
 .pais {
