@@ -216,14 +216,6 @@ h1 {
     min-height: 80px;
     font-size: 11px;
   }
-  /*La reseña se salta al fondo  ocupando las dos columnas */
-  .resenia {
-    grid-column: span 2;
-    padding: 10px;
-    min-height: 80px;
-    font-size: 11px;
-  
-  }
   /*datos de campeones*/
   .paises .foto img {
   width: 100%;
