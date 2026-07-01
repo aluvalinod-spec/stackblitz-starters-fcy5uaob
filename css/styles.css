@@ -171,62 +171,63 @@ h1 {
 }
 
 /*campeones******/
-/****** /*Contenedor principal:Diveide el diseño en dos columnas(Continente y Paises)*/
+/******/ /*Contenedor principal: Divide el diseño en dos columnas (Continente y Paises) */
 .campeones {
   display: grid;
-  grid-template-columns: 1fr 3fr; /*25% para continete, 75% para paises */
+  grid-template-columns: 1fr 3fr;/*25% para continente, 75% para paises*/
   border: 2px solid #000;
   width: 100%;
-}
-
-/* Columna izquierda: Continente ocupara todo el alto disponible automaticamente*/
-.continente{
-border-right: 2px solid #000;
-padding: 15px 10px;
-font-weight: bold;
-font-size: 14px;
-}
-
-/*Columna Derecha: se convierte en otro Grid para organizar el contenido interno */
-.paises{
-  display: grid;
-  grid-template-columns: 1fr 3fr;/* Divido en 2 columnas para las fotos*/
-}
-
-.pais {
-  grid-column: span 2;
-  padding: 10px;
+  }
+  /*Columna Izquierda: Continente ocupará todo el alto disponible automáticamente*/
+  .continente {
+    border-right: 2px solid #000;
+    padding: 15px 10px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  /*Columna Derecha: Se convierte en otro Grid para organizar el contenido interno*/
+  .paises{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Dividido en 2 columnas para las fotos*/
+  }
+  /*El título del País ocupa las dos columnas*/
+  .pais {
+    grid-column:span 2;
+    padding: 10px;
   font-weight: bold;
   font-size: 13px;
   border-bottom: 2px solid #000;
-}
-
-/* Las fotos se acomodan una al lado de la otra automaticamente (50% cada una)*/
-.foto{
-min-height: 120px; /* Espacio para la imagen*/
-padding: 35px 10px 10px 10px;
-font-size: 11px;
-border-bottom: 2px solid #000;
-}  
-
-/*Borde verticar divisor solo en la primera foto*/
-.foto:nth-of-type(odd) {
-  border-right: 2px solid #000;
-}
-
-/* La reseña se salta al fondo ocupando las dos columnas*/
-.resenia{
-  grid-column: span 2;
-  padding: 10px;
-  min-height: 80px;
+  }
+  /*Las fotos se acomodan una al lado de la otra automáticamente*/
+  .foto {
+  min-height: 120px; /*Espacio para la imagen*/
+  padding: 35px 10px 10px 10px;
   font-size: 11px;
-}
-
-/* datos de campeones */
-.paises .foto img{
+  border-bottom: 2px solid #000;
+  }
+  /*Borde vertical divisor solo en la primera foto*/
+  .foto:nth-of-type(odd){
+    border-right: 2px solid #000;
+  }
+  /* La reseña se salta al fondo ocupando las dos columnas*/
+  .resenia{
+    grid-column: span 2;
+    padding: 10 px;
+    min-height: 80px;
+    font-size: 11px;
+  }
+  /*La reseña se salta al fondo  ocupando las dos columnas */
+  .resenia {
+    grid-column: span 2;
+    padding: 10px;
+    min-height: 80px;
+    font-size: 11px;
+  
+  }
+  /*datos de campeones*/
+  .paises .foto img {
   width: 100%;
-}
-
-.resenia p{
+  }
+  .resenia p {
   font-size: 16px;
-}
+  }
